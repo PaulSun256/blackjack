@@ -1,0 +1,49 @@
+main class
+    obvious shit
+
+class player
+    vars: 
+        protected:
+            int hand[11]
+            int totalCards
+            int totalValue
+            int money
+
+            str name
+    
+    methods:
+        public:
+            construcc(str name, int money)
+
+            hit(int card)
+            showHand()
+        protected:
+            getValue(int card)
+
+class dealer extends player
+    (same as player)
+    methods:
+        public:
+            showHand()
+
+class deck
+    vars:
+        private:
+            int deck[52]
+            int currentCard
+    
+    methods:
+        public:
+            construcc()
+            newDeck()
+            shuffle()    
+
+class jokes
+    vars:
+        public:
+            static ArrayList<String> funnyStuff
+    
+    methods:
+        public:
+            getMoreFunny()
+            getRemainingFunny()

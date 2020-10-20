@@ -1,9 +1,0 @@
-main class
-
-class dealer
-
-class player
-
-class deck
-
-class jokes
