@@ -22,13 +22,20 @@ class player
 
             player(str name, int money)
 
-            hit(int card)
-            showHand()
+            voic hit(int card)
+            String showHand()
+
+            int getTotal()
+            int getTotalCards()
+            String getName()
+            int getMoney()
+
+            void setMoney(int money)
 
         protected:
 
-            getValue(int card)
-            getSuits(int card)
+            String getValue(int card)
+            String getSuits(int card)
 
 class dealer extends player
 
@@ -40,7 +47,7 @@ class dealer extends player
 
             dealer()
 
-            showHand()
+            String showHand()
 
 class deck
 
@@ -76,10 +83,11 @@ class jokes
 
             jokes()
 
-            getMoreFunny()
-            getRemainingFunny()
+            String getMoreFunny()
+        
+        private:
+            
+            int getRemainingFunny()
 
-
-hearts diamond club spade = 3 4 5 6
 
 spade hearts club diamond = 6 3 5 4
