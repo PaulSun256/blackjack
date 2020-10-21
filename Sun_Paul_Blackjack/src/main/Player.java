@@ -34,7 +34,8 @@ public class Player	{
 
         // I don't use windows, but the teacher does, so I have to be able to change to the proper
         // character encoding automatically.
-        if(suits == null)
+        if(suits[0] == null)    {
+
             if (System.getProperty("os.name").startsWith("Windows"))    {
 
                 suits[0] = Character.toString((char)6);
@@ -118,7 +119,7 @@ public class Player	{
     }
 
     // gets the player name
-    public int getName()    {
+    public String getName()    {
         
         return name;
     }
