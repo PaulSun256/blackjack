@@ -1,49 +1,85 @@
-main class
-    obvious shit
+main class // driver code
+    game logic
 
 class player
+
     vars: 
+
         protected:
+
             int hand[11]
             int totalCards
             int totalValue
             int money
 
-            str name
-    
+            String suit[4]
+            String rank[13]
+            String name
+
     methods:
+
         public:
-            construcc(str name, int money)
+
+            player(str name, int money)
 
             hit(int card)
             showHand()
+
         protected:
+
             getValue(int card)
+            getSuits(int card)
 
 class dealer extends player
+
     (same as player)
+
     methods:
+
         public:
+
+            dealer()
+
             showHand()
 
 class deck
+
     vars:
+
         private:
+
             int deck[52]
             int currentCard
     
+
     methods:
+
         public:
-            construcc()
-            newDeck()
-            shuffle()    
+
+            deck()
+
+            void newDeck()
+            void shuffle()
+            int nextCard()
 
 class jokes
+
     vars:
-        public:
+
+        private:
+
             static ArrayList<String> funnyStuff
-    
+
     methods:
+
         public:
+
+            jokes()
+
             getMoreFunny()
             getRemainingFunny()
+
+
+hearts diamond club spade = 3 4 5 6
+
+spade hearts club diamond = 6 3 5 4
