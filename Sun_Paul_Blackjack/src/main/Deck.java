@@ -22,6 +22,7 @@ public class Deck	{
 
     public Deck()   {
         
+        // make a new deck
         newDeck();
     }
 
