@@ -25,6 +25,9 @@ public class Deck	{
         newDeck();
     }
 
+
+// methods
+// --------------------------------------------------------------------------------------------------------------------------------------------------
     public void newDeck()   {
 
         // fills the array with a sorted pile of cards, AKA a sorted array of consecutive integers
