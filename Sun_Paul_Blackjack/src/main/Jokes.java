@@ -33,7 +33,6 @@ public class Jokes	{
     // method to read the jokes from a file and shuffle them
     public static void getTheFunny() {
         
-        System.out.println("qwer");
         String joke = "";
         Scanner inputFile = null;
 
