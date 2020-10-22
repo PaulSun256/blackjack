@@ -53,6 +53,7 @@ class dealer extends player
             dealer()
 
             String showHand()
+            String showReadHand()
 
 class deck
 
