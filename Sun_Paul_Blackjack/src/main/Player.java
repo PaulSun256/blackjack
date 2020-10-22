@@ -59,7 +59,8 @@ public class Player	{
     // gets a new card and adds it
     public void hit(int card)   {
 
-        hand[totalCards++] = card;
+        hand[totalCards] = card;
+        totalCards++;
         totalValue += getValue(card);
     }
 
@@ -69,9 +70,16 @@ public class Player	{
         String handShow = "";
 
         // loop through the player's hand and 'translates' the card IDs to text
-        for (int i = 0; i <= totalCards; i++)   handShow += getSuits(hand[i]);
+        for (int i = 0; i < totalCards; i++)   handShow += getSuits(hand[i]);
 
         return handShow;
+    }
+
+    // resets the player
+    public void reset() {
+
+        totalCards = 0;
+        totalValue = 0;
     }
 
     // gets the value of the card (1 - 11)
@@ -99,7 +107,7 @@ public class Player	{
         suit = suits[card / 13];
         rank = ranks[card % 13];
 
-        return rank + suit;
+        return rank + suit + " ";
     }
 
 

@@ -13,7 +13,7 @@
 +========================================+
 */
 
-public class Dealer	{
+public class Dealer	extends Player{
     
     public Dealer() {
 
@@ -25,6 +25,16 @@ public class Dealer	{
     public String showHand()    {
         
         // we aren't supposed to see the dealer's hand
-        return getSuits(hand[i]) + "?";
+        return getSuits(hand[0]) + "?";
+    }
+
+    public String showRealHand()    {
+        
+        String handShow = "";
+
+        // loop through the player's hand and 'translates' the card IDs to text
+        for (int i = 0; i <= totalCards; i++)   handShow += getSuits(hand[i]);
+
+        return handShow;
     }
 }

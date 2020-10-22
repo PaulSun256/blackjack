@@ -31,14 +31,16 @@ public class Jokes	{
 // --------------------------------------------------------------------------------------------------------------------------------------------------
     
     // method to read the jokes from a file and shuffle them
-    public static getTheFunny() {
+    public static void getTheFunny() {
         
+        System.out.println("qwer");
         String joke = "";
         Scanner inputFile = null;
 
         // attempts to read from file
         try {
-            Scanner inputFile = new Scanner(new File("hahafunny.txt"));
+            
+            inputFile = new Scanner(new File("hahafunny.txt"));
 
             while (inputFile.hasNextLine())  {
                 
