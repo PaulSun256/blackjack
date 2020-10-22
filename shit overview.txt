@@ -1,5 +1,10 @@
 main class // driver code
-    game logic
+    get input, name and other shit
+    start a game, initialize the players, dealers, decks and jokes
+    deal 2 cards to both
+    ask player stuff if they want to hit or stand
+    player hits or stands
+    dealer hits or stands as long as they are under 17
 
 class player
 
@@ -57,6 +62,8 @@ class deck
 
             int deck[52]
             int currentCard
+            int suits[4]
+            int ranks[13]
     
 
     methods:
@@ -68,6 +75,7 @@ class deck
             void newDeck()
             void shuffle()
             int nextCard()
+            String toString()
 
 class jokes
 
