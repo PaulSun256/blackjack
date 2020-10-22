@@ -83,11 +83,10 @@ class jokes
 
             jokes()
 
-            String getMoreFunny()
-        
-        private:
-            
-            int getRemainingFunny()
+            String getTheFunny()
+
+            String nextFunny()
+
 
 
 spade hearts club diamond = 6 3 5 4
