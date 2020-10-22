@@ -25,7 +25,6 @@ public class Dealer	{
     public String showHand()    {
         
         // we aren't supposed to see the dealer's hand
-        if(totalCards == 0) return "";
         return getSuits(hand[i]) + "?";
     }
 }
